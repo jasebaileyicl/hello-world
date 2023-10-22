@@ -18,7 +18,7 @@ jobs:
    - name: Install pytest
      run: pip install pytest
    - name : Pytest
-     run: pytest
+     run: pytest api/*.py
 
  deploy-to-vercel:
    needs: python-formatting
