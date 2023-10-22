@@ -11,9 +11,8 @@ def hello_world():
 
 @app.route("/query")
 def query():
-    query = request.args.get('q')
-
-    return process_query(query)
+    qz = request.args.get('q')
+    return process_query(qz)
 
 
 def process_query(q: str):
