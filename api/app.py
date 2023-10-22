@@ -22,5 +22,4 @@ def process_query(q: str):
     if q == "dinos":
         return "dinos are great"
 
-
     return "what"
