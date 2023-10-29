@@ -1,3 +1,5 @@
+import urllib
+
 from flask import Flask
 from flask import request
 
@@ -11,7 +13,7 @@ def hello_world():
 
 @app.route("/query")
 def query():
-    qz = request.args.get('q')
+    qz = urllib.unquote( request.args.get('q'))
     return process_query(qz)
 
 
