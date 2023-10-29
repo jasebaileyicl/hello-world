@@ -18,7 +18,7 @@ def query():
 def process_query(q: str):
     if q == "dinos":
         return "dinos are great"
-    if q=="What is your name?":
+    if q == "What is your name?":
         return "test2"
 
     return "what?"
