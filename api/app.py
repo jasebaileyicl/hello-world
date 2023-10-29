@@ -13,7 +13,7 @@ def hello_world():
 
 @app.route("/query")
 def query():
-    qz = urllib.unquote( request.args.get('q'))
+    qz = urllib.unquote(request.args.get('q'))
     return process_query(qz)
 
 
